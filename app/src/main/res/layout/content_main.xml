@@ -12,49 +12,55 @@
     tools:context="com.example.android.myappportfolio.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true">
-
-        <TextView
-            android:text="My Nanodegree Apps!"
-            style="@style/HeaderTextStyle"/>
-
-        <Button
-            android:onClick="display"
-            android:text="Spotify Streamer"
-            style="@style/ButtonStyle" />
-        <Button
-            style="@style/ButtonStyle"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:onClick="display"
-            android:text="Football Scores App" />
-        <Button
-            style="@style/ButtonStyle"
-            android:onClick="display"
-            android:text="Library App" />
-        <Button
-            style="@style/ButtonStyle"
-            android:onClick="display"
-            android:text="Build It Bigger" />
-        <Button
-            style="@style/ButtonStyle"
-            android:onClick="display"
-            android:text="XYZ Reader" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
 
-        <Button
-            style="@style/CapstoneButtonStyle"
-            android:onClick="display"
-            android:text="Capstone " />
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="@string/header" />
 
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="display"
+                android:text="Spotify Streamer" />
 
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:onClick="display"
+                android:text="Football Scores App" />
 
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="display"
+                android:text="Library App" />
 
-    </LinearLayout>
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="display"
+                android:text="Build It Bigger" />
 
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="display"
+                android:text="XYZ Reader" />
 
+            <Button
+                style="@style/CapstoneButtonStyle"
+                android:onClick="display"
+                android:text="Capstone " />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
+
+
+
